@@ -21,7 +21,7 @@ const userId = getLocalStorage(localKeyId)
 // Xử lí dữ liệu động
 let isSearch = false
 
-Auth()
+// Auth()
 //----------------------------------------------------------------
 
 let currentPage = 0
