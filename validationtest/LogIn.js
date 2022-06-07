@@ -29,7 +29,7 @@ formSubmit.onclick = (e) => {
         if(typeof data == 'object'){
             localStorage.setItem("user", JSON.stringify(data.user_id));
             console.log(JSON.stringify(data.user_id))
-            window.location.href = `http://127.0.0.1:5501/main/index.html`
+            window.location.href = `http://127.0.0.1:5501/index.html`
         }else{
             alert(data)
         }
