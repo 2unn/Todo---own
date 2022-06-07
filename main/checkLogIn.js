@@ -10,7 +10,7 @@ export function Auth () {
     const userApi = inforApi((list)=> {
         
         if(list.id !== userId || !userId){
-            window.location.href = `http://127.0.0.1:5501/validationtest/SignIn.html`
+            window.location.href = `https://2unn.github.io/Todo---own/validationtest/SignIn.html`
         }
 
     },userId);   
