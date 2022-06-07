@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{ 
+    font-size: 62.5%;
+    font-family:'Times New Roman', Times, serif
+}
+ 
+.main{
+   background-color: #E2DBCC;
+   min-height: 100vh;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+}
+
+h3 {
+    display: block;
+    font-size:1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 22px;
+    background-color: #ff8461;
+}
+
+.spacer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form{
+    width: 360px;
+    background-color: #F7F5F2;
+    font-size:1.6rem;
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+
+
+.form-group{
+    margin-top: 15px;
+}
+
+.form-group.radio {
+    align-self: start;
+    padding-left: 30px;
+}
+
+.form-group.radio .form-label {
+    padding-bottom: 8px;
+}
+
+.form-input{
+    width: 300px;
+    line-height:2rem;
+    outline: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #F7F5F2;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    border-bottom: 1px solid #634b434e;
+    position:sticky; 
+}
+
+.form-input:hover{
+    border-bottom: 1px solid #634b43;
+}
+
+.form-label{
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #634b43;
+}
+
+.form-message{
+    display: block;
+    font-size: 1.4rem;
+}
+
+.form-submit{
+    margin-top:40px;
+    width: 300px;
+    padding: 13px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 22px;
+    color: #fff;
+    background-color: #F65636;
+    border:none;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #ff6344;
+}
+
+.form-group.invalid .form-input {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message{
+    color: #f33a58;
+}
+
+.Signed{
+    color: #634b43
+}

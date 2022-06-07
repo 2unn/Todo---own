@@ -1,0 +1,258 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-03-24T07:12:19.287Z",
+    "__export_source": "insomnia.desktop.app:v2022.2.1",
+    "resources": [
+        {
+            "_id": "req_914d157d65eb4b228f115eabde67df97",
+            "parentId": "fld_d588db11c72d4012ba630e5ef258bae1",
+            "modified": 1648089622347,
+            "created": 1648029219296,
+            "url": "https://authencation.vercel.app/api/user/list",
+            "name": "user/get",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1627464988311,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_d588db11c72d4012ba630e5ef258bae1",
+            "parentId": "wrk_bd4ae46f3a5c46d9a3c08fce5bf3b5e7",
+            "modified": 1627464942835,
+            "created": 1626141975561,
+            "name": "auth",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1627294587612,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_bd4ae46f3a5c46d9a3c08fce5bf3b5e7",
+            "parentId": null,
+            "modified": 1620376711666,
+            "created": 1620376711666,
+            "name": "Todo",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_de4465fd587d4e4593db2b639c00b879",
+            "parentId": "fld_d588db11c72d4012ba630e5ef258bae1",
+            "modified": 1648105894716,
+            "created": 1648082943720,
+            "url": "https://lauthencation.vercel.app/api/user/create",
+            "name": "user/create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"full_name\" : \"eaa\",\n\t\"password\" : \"123456\",\n\t\"username\" : \"trung\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_f2ca12bfb7d64f32b90dde999eacff18"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627464988261,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a484fc33462d4af48b8959c7c55c733f",
+            "parentId": "fld_d588db11c72d4012ba630e5ef258bae1",
+            "modified": 1648105892841,
+            "created": 1626141983605,
+            "url": "https://authencation.vercel.app/api/auth/login",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\" : \"trung\",\n\t\"password\" : \"123456\"\n}\t\n\t"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_6a532544a6684b45a088b0c239294f49"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1626141983605,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_44b024853414d808098a6423befa5c7286da02c3",
+            "parentId": "wrk_bd4ae46f3a5c46d9a3c08fce5bf3b5e7",
+            "modified": 1620376711892,
+            "created": 1620376711892,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1620376711892,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_44b024853414d808098a6423befa5c7286da02c3",
+            "parentId": "wrk_bd4ae46f3a5c46d9a3c08fce5bf3b5e7",
+            "modified": 1634046100263,
+            "created": 1620376711898,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "__cf_bm",
+                    "value": "720285f576ef0cad4ac65efb1af826e2523f2379-1622879266-1800-Adg0MKyKmuCENTuZin/8NCld7sX+22xSAlhPjAut3n96vbdGjrUTzgRqGrskJBFI/MFpNBq0m9pen+IpeRfO3jU=",
+                    "expires": "2021-06-05T08:17:46.000Z",
+                    "domain": "batdongsan.com.vn",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=None"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2021-06-05T07:47:46.488Z",
+                    "lastAccessed": "2021-06-05T07:47:46.488Z",
+                    "id": "23431456250204175"
+                },
+                {
+                    "key": "_ud",
+                    "value": "60bb269a348f911144779130",
+                    "expires": "2089-06-23T17:29:55.000Z",
+                    "maxAge": 2147483647,
+                    "domain": "trackpush.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=none"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2021-06-05T14:15:48.840Z",
+                    "lastAccessed": "2021-06-05T14:15:48.842Z",
+                    "id": "4966961310210476"
+                },
+                {
+                    "key": "_fg",
+                    "value": "5d3dab492f649750f2066cd2bb63b008",
+                    "expires": "2089-06-23T17:30:04.000Z",
+                    "maxAge": 2147483647,
+                    "domain": "trackpush.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "SameSite=none"
+                    ],
+                    "hostOnly": false,
+                    "creation": "2021-06-05T14:15:48.842Z",
+                    "lastAccessed": "2021-06-05T14:15:57.304Z",
+                    "id": "3313264921498704"
+                },
+                {
+                    "key": "XSRF-TOKEN",
+                    "value": "eyJpdiI6InhJSEhxNzVndzlmd2RzY1FoeVdNQ1E9PSIsInZhbHVlIjoibFwvSFRqSktyM2piczRrNTNZeUo2YjMwT1A1VVVVMEtDRjduZDl6dHR5cVNvcUtOcHhWamVRVmtwcDVHNklvYTMiLCJtYWMiOiIzZDAzN2Q3N2E2YWJiOTNlOGYxY2JjNjk5OGFlZWQwYzc4MTBjYTA5NjA2NTYzOTgyYmEzMGRkZmQyM2Y3MmE0In0%3D",
+                    "expires": "2021-06-05T16:18:31.000Z",
+                    "maxAge": 7200,
+                    "domain": "mabuudien.net",
+                    "path": "/",
+                    "hostOnly": true,
+                    "creation": "2021-06-05T14:16:49.255Z",
+                    "lastAccessed": "2021-06-05T14:18:32.260Z",
+                    "id": "3984429007230479"
+                },
+                {
+                    "key": "laravel_session",
+                    "value": "eyJpdiI6Im1QZWp4SEFmWnFVXC9iaHdhWWV3eFlBPT0iLCJ2YWx1ZSI6IjYzNXRTbkZXWHFNZFlJTG83QXFaWDcxbEdoOWlTSU9DRzlyWGRJNGVcL01ab1FHSlwvVUFKQ1plUFVITXppUVM4WCIsIm1hYyI6IjYyODMxN2ZlMmU2NzZhMDA1MTIxYmEzNDJkNjBjNDcyMDU1NTc2MjYzMzE5MDYzYzhlZmJmNThjNzJlNGFkMTYifQ%3D%3D",
+                    "expires": "2021-06-05T16:18:31.000Z",
+                    "maxAge": 7200,
+                    "domain": "mabuudien.net",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2021-06-05T14:16:49.255Z",
+                    "lastAccessed": "2021-06-05T14:18:32.260Z",
+                    "id": "6585243466627089"
+                },
+                {
+                    "key": "xfa_csrf",
+                    "value": "YzpwyIOXOUAMB3M1",
+                    "domain": "www.handheld.com.vn",
+                    "path": "/",
+                    "secure": true,
+                    "hostOnly": true,
+                    "creation": "2021-07-24T13:56:23.052Z",
+                    "lastAccessed": "2021-07-24T13:56:23.052Z",
+                    "id": "4676948456033878"
+                },
+                {
+                    "key": "ci_kisession",
+                    "value": "a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22aaa6fe003be03e5b3b0b967f68410d35%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A12%3A%2235.191.1.186%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A17%3A%22insomnia%2F2021.5.3%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1634046100%3B%7D4fc93bfeb74a9f28e04d798ee1bf252c",
+                    "domain": "infoplusvn.com",
+                    "path": "/",
+                    "hostOnly": false,
+                    "creation": "2021-10-12T13:41:40.255Z",
+                    "lastAccessed": "2021-10-12T13:41:40.256Z",
+                    "id": "5744688865959184"
+                },
+                {
+                    "key": "ci_userlang",
+                    "value": "korean",
+                    "expires": "2021-11-11T13:41:40.000Z",
+                    "maxAge": 2592000,
+                    "domain": "infoplusvn.com",
+                    "path": "/",
+                    "hostOnly": false,
+                    "creation": "2021-10-12T13:41:40.256Z",
+                    "lastAccessed": "2021-10-12T13:41:40.256Z",
+                    "id": "39095801149799025"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_08acc503f5b04ad9900adf888bacf109",
+            "parentId": "wrk_bd4ae46f3a5c46d9a3c08fce5bf3b5e7",
+            "modified": 1620376711672,
+            "created": 1620376711672,
+            "fileName": "Todo",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
