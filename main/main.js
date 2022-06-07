@@ -317,7 +317,7 @@ function handleAdd () {
 function LogoutHandle () {
     const logOutBtn = document.getElementsByClassName('log-out')[0];
     logOutBtn.onclick = () => {
-        window.location.href = `http://127.0.0.1:5501/validationtest/SignIn.html`;
+        window.location.href = ` https://2unn.github.io/Todo---own/validationtest/SignIn.html`;
         localStorage.removeItem(localKeyId)
     }
 }
